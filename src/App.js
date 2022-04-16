@@ -6,6 +6,7 @@ import useFetch from "./helpers/useFetch";
 
 function App() {
   const { posts } = useFetch("https://jsonplaceholder.typicode.com/posts");
+
   return (
     <Main>
       <CardContainer>
@@ -25,10 +26,10 @@ const Main = styled.div`
   justify-content: center;
 `;
 const CardContainer = styled.div`
-  max-width: 1107px;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+  max-width: 1107px;
   padding: 3rem 5rem 3rem 5rem;
 `;

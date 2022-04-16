@@ -10,7 +10,7 @@ const useFetch = (url) => {
         setPosts(res.data);
       })
       .catch((err) => console.log(err));
-  }, [url]);
+  }, []);
   return { posts };
 };
 
